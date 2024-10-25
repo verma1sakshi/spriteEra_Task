@@ -519,9 +519,6 @@ body {
     border-color: #2f3b6d;
 }
 
-.form-group {
-    /* position: relative; */
-}
 
 /* Dropdown icon */
 .contact-form select::-ms-expand {
