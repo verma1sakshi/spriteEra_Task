@@ -447,7 +447,7 @@ body {
     margin: 0 auto;
     margin-bottom: 40px;
     position: relative;
-    z-index: -1;
+   z-index: -1;
 }
 
 .form-container h2 {
@@ -467,7 +467,7 @@ body {
 }
 
 .contact-form {
-    position: static;
+    /* position: static; */
     width: 100%;
 }
 
@@ -482,7 +482,7 @@ body {
 .form-group input,
 .form-group select,
 .form-group textarea {
-    position: static;
+    /* position: static; */
     width: 100%;
     max-width: 100%;
     padding: 15px;
@@ -506,7 +506,7 @@ body {
     border-radius: 5px;
     font-size: 16px;
     color: #333;
-    position: relative;
+    /* position: relative; */
     /* Adding space for the dropdown icon */
     padding-right: 40px; 
     background-image: url('./images/ic_round-arrow-drop-down-circle.png');
@@ -520,7 +520,7 @@ body {
 }
 
 .form-group {
-    position: relative;
+    /* position: relative; */
 }
 
 /* Dropdown icon */
@@ -781,6 +781,7 @@ button:hover {
          padding:0;
         display: flex;
         flex-direction: column;
+        /* position: relative; */
       }
       .consultation-content button{
          width: 200px;
