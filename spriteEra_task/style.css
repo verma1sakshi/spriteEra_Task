@@ -11,7 +11,7 @@ body {
 .header{
     position:sticky;
     top:0;
-    width: 100%;
+    width: 100vw;
     height: 60%;
     background-color: #fff;
     display: flex;
@@ -648,8 +648,147 @@ button:hover {
 }
 
 /* Responsive Styles */
-  /* Medium Devices (Tablets, 768px and below) */
-  @media(min-width:240px) and (max-width: 740px) {
+@media(min-width:200px) and (max-width:540px)
+{
+      .container1 {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .container1 img {
+        height: 30px;
+        width: auto;
+    }
+    .nav {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        right: 0;
+        top: 80px;
+        width: 100%;
+        height: 110vh;
+        background-color: #ffffff;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        text-align: center;
+        padding-top: 30px;
+        font-size: 22px;
+    }
+    .nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .nav.active {
+        transform: translateX(0);
+    }
+
+    .hamburger {
+        display: flex; /* Show hamburger menu */
+    }
+    .hero-image img {
+        width: 98vw;
+        height: 297px;
+        
+    }
+    .reputation-cards {
+        margin: 60px;
+        display: block;
+        justify-content: space-between;
+    }
+    .card {
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgb(163 154 154);
+        width: 100%;
+        text-align: left;
+        margin-bottom: 40px;
+    }
+    .service-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .experience-section {
+        display: block;
+        background-color: #fff;
+        width: 100%;
+    }
+    .image-container img {
+        width: 250px;
+        height: auto;
+        margin-bottom: 0;
+    }
+    .experience-content {
+       margin-bottom: 20px;
+    }
+    .experience-content h1 {
+      margin: 0;
+    }
+    .consultation-section {
+        height:auto;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: left;
+        padding: 20px;
+    }
+    .projects-wrapper {
+        display:block;
+    }
+    .projects-categories {
+        flex: 1;
+        padding-right: 300px;
+        margin-left:0px;
+    }
+    .projects-categories h2 {
+        padding-left: 60px;
+    }
+    .category-list {
+        list-style-type: none;
+        display: flex;
+        flex-direction:row;
+        gap: 20px;
+        padding-left: 0;
+    }
+    .carousel-slide {
+        display: block;
+        gap: 20px;
+        min-width: 100%;
+        transition: 0.5s ease;
+    }
+    .project-card {
+        width: 100%;
+        max-width: 280px;
+        background-color: #f0f4f8;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    } 
+    .btn {
+        background-color: #2947A9;
+        color: white;
+        padding: 16px 40px;
+        border: none;
+        border-radius: 2px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-left:0;
+        height: 53px;
+        width: 271px;
+    }
+    .footer-left, .footer-right {
+        margin-left: 0;
+    }
+    .footer-bottom p {
+        padding-left: 10px;
+        font-size: 14px;
+    }
+}
+  @media(min-width:550px) and (max-width: 740px) {
     .header {
       padding: 15px;
     }
@@ -730,7 +869,13 @@ button:hover {
     .hamburger {
         display: flex; /* Show hamburger menu */
     }
-
+    .service-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
     .reputation-cards {
         flex-direction: column;
         align-items: center;
@@ -800,10 +945,11 @@ button:hover {
       gap: 30px;
     }
     /* Service Grid */
-    .service-grid {
-      grid-template-columns: repeat(1, 1fr);
-      gap: 10px;
-    }
+        .service-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+    
   
     /* Projects section */
     .projects-wrapper {
@@ -827,7 +973,7 @@ button:hover {
         margin-bottom: 20px;
     }
   }
-@media(min-width:741px)and (max-width:875px)
+@media(min-width:741px)and (max-width:1049px)
 {
     .service-grid {
         display: grid;
@@ -872,13 +1018,10 @@ button:hover {
     }
 
 }
-  @media (min-width:876px) and (max-width :1126px){
-    .header{
-        width: 100vw;
-    }
+  @media (min-width:1050px) and (max-width :1126px){
     .service-grid {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 20px;
         max-width: 1200px;
         margin: 0 auto;
